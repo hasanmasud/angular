@@ -1,0 +1,133 @@
+10
+
+dir
+0
+http://masud-pc/svn/repo1/trunk/CZJ05/Next%20Gen%20Web%20Technology/Next%20Genration%20Web/Angular/AngularDemo_2/app
+http://masud-pc/svn/repo1
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2fcf71c2-ab67-6440-955f-1e36a5faf959
+
+.buildignore
+file
+
+
+
+add
+
+.htaccess
+file
+
+
+
+add
+
+404.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+employee.json
+file
+
+
+
+add
+
+favicon.ico
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+images
+dir
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+robots.txt
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+scripts
+dir
+
+
+
+add
+
+styles
+dir
+
+
+
+add
+
+views
+dir
+
+
+
+add
+
