@@ -1,0 +1,12 @@
+npm install -g yo generator-angular grunt-cli bower --> installing the packages
+
+yo angular 											
+grunt server	
+	
+yo angular:route favourites							
+yo angular:controller myController								
+yo angular:service television
+yo angular:factory employees				
+yo angular:directive myDirective
+yo angular:filter myFilter
+
