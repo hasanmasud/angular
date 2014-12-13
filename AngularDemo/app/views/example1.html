@@ -1,0 +1,9 @@
+<div>
+	<ul>
+		<li ng-repeat="name in names">{{name}}</li>
+	</ul>
+	<form ng-submit="addName()">
+		<input type="text" ng-model="enteredName">
+		<input type="submit" value="add">
+	</form>
+</div>
