@@ -10,3 +10,5 @@ yo angular:factory employees
 yo angular:directive myDirective
 yo angular:filter myFilter
 
+yo angular:filter myFilter
+
