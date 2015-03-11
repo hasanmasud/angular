@@ -321,7 +321,15 @@ module.exports = function (grunt) {
           src: '*.js',
           dest: '.tmp/concat/scripts'
         }]
-      }
+      },
+      
+      controllers: {
+    	    src: ['scripts/controllers/employee.js'],
+    	    dest: 'generated/scripts/controllers/employee_min.js'
+    	  },
+      
+      
+      
     },
 
     // Replace Google CDN references
