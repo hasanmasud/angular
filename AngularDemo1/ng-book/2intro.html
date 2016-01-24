@@ -12,14 +12,21 @@
     	{{clock}}
     </div>
     <script type="text/javascript">
-    	function MyController($scope){
+    	function MyController($scope,$timeout){
     		var updateClock = function(){
     			$scope.clock = new Date();
     		}
     		setInterval(function(){
     			$scope.$apply(updateClock);
     		},1000);
-    		updateClock();
+    		
+    		/*
+    		var timoutCall = function(){
+    			updateClock();
+    			$timeout(timoutCall,1000);
+    		}
+    		timoutCall();
+    		*/
     	}
     </script>
 </body>
