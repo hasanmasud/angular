@@ -1,0 +1,35 @@
+<html>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		{{person.name}}
+		<div ng-controller="MyController">
+			{{person.name}}
+			<div ng-controller="MyChildController">
+				{{person.name}} 
+			</div>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var myMod = angular.module('myApp', []);
+	myMod.run([ '$rootScope', function($rootScope) {
+		$rootScope.person = {};
+		$rootScope.person.name = 'Root';
+	} ]);
+
+	myMod.controller('MyController', [ '$scope', function($scope) {
+		$scope.person.name = 'Controller...';
+	} ]);
+
+	myMod.controller('MyChildController', [ '$scope', function($scope) {
+		$scope.person.name = 'Child of Controller...';
+
+
+	} ]);
+</script>
+</html>

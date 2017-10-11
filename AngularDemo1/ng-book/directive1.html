@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Simple app</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+</head>
+<body>
+	<div>
+		<div>
+			<div my-first-directive></div>
+		</div>
+		
+		<div>
+			<my-first-directive/>
+		</div>
+		
+		<div>
+			<div class="my-first-directive"></div>
+		</div>
+		
+		<div>
+			<!-- directive: my-first-directive  -->
+		</div>
+		
+		<input type="text" ng-model="myUrl"/>
+		<div my-second-directive my-url="{{myUrl}}" my-link-text="click here for {{myUrl}}"/>
+		
+		
+	</div>
+	<script type="text/javascript">
+	var myMod = angular.module('myApp',[]);
+	myMod.directive('myFirstDirective',[function(){
+		
+		return {
+			restrict : 'EACM',
+			replace : true,
+			template : '<a = href="http:google.com">click here</a>'
+		};
+	
+	}]);
+	
+	myMod.directive('mySecondDirective',[function(){
+		return {
+			restrict : 'A',
+			scope : {	
+						myUrl : '@',
+						myLinkText : '@'
+					},
+			replace : true,
+			template : '<a = href="{{myUrl}}">{{myLinkText}}</a>'
+		};
+	}]);
+	
+	
+	</script>
+</body>
+</html>
+
